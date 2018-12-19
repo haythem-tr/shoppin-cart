@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shooping cart</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="shopping.css"> 
+    </head>
+    <body style="background-image: url(sport-2.jpg);background-size: 108%;">
+<section class="articl-1" >
+ <div  class="carD" >
+       <img src="ven4.jpg" style="width:100% ;border-radius: 13%">
+ <div class="card-body">
+         <h2 class="titre">Gant de box</h2>
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  acheter maintenant
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Gant de box</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <img style="margin-left: 27%;" src="ven4.jpg"><br>
+         <label class="AA">prix en DT: </label>
+       <span id="prix1" class="AAA">150 </span> </br>
+         <p class="AA"> Quantite: <input id="quentite1" value="0" type="number" onclick="prixs(1)" step="1"></input> </p>
+         <label class="AA">Prix Total :</label>
+       <span id="total1" class="AAA"  > </span>
+ 
+        </div>
+        <div class="modal-footer">
+
+          <button  type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" onclick="totalPrice()">ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>      
+  </div>
+  </div> 
+              <div class="carD">
+                  <img src="ven3.jpg" style="width:100% ;border-radius: 13%">
+                  <div class="card-body">
+                          <h2 class="titre">Gant de kick-Boxing</h2>
+                          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter-2">
+  acheter maintenant
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Gant de kick-Boxing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <img src="ven3.jpg"><br>
+        <label class="AA">prix en DT: </label>
+       <span id="prix2" class="AAA"> 80 </span> </br>
+         <p class="AA"> Quentite: <input id="quentite2" value="0" type="number" onclick="prixs(2)" step="1"></input> </p>
+         <label class="AA">Prix Total :</label>
+       <span id="total2" class="AAA"  >  </span>
+ 
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button"onclick="totalPrice()" class="btn btn-primary"data-dismiss="modal" aria-label="Close">ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>     
+                </div>
+            </div>
+            <div class="carD">
+                <img src="sac1.jpeg" style="width:100% ;border-radius: 13%">
+                <div class="card-body">
+                        <h2 class="titre">Sac de frappe</h2>
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter-3">
+  acheter maintenant
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Sac de frappe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="sac1.jpeg" style="width: 45%;"><br>
+        <label class="AA">prix en DT: </label>
+        <span id="prix3" class="AAA">320 </span> </br>
+          <p class="AA"> Quentite: <input id="quentite3"  type="number"value="0" onclick="prixs(3)" step="1"></input> </p>
+          <label class="AA">Prix Total :</label>
+        <span id="total3" class="AAA" > </span>
+ 
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button"  onclick="totalPrice()" class="btn btn-primary"data-dismiss="modal" aria-label="Close">ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+</div>     
+              </div>
+          </div>
+     </section>
+     <section class="Articl">
+        <div  class="carD" >
+            <img src="csc.jpeg" style="width:100% ;border-radius: 13%">
+      <div class="card-body">
+              <h2 class="titre">Casque free fight</h2>
+              <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter-4">
+      acheter maintenant
+       </button>
+       
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModalCenter-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalCenterTitle">Casque free fight</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+              <img style="width: 65%;" src="csc.jpeg"><br>
+              <label class="AA">prix en DT: </label>
+            <span id="prix4"class="AAA"> 80 </span> </br>
+              <p class="AA"> Quentite: <input id="quentite4" value="0" type="number" onclick="prixs(4)" step="1"></input> </p>
+              <label class="AA">Prix Total :</label>
+            <span id="total4" class="AAA" > </span>
+      
+             </div>
+             <div class="modal-footer">     
+               <button type="button"  onclick="totalPrice()" class="btn btn-primary"data-dismiss="modal" aria-label="Close">ajouter au panier</button>
+             </div>
+           </div>
+         </div>
+       </div>      
+       </div>
+       </div> 
+       <div  class="carD" >
+          <img src="rbk3.jpg" style="width:100% ;border-radius: 13%">
+    <div class="card-body">
+            <h2 class="titre">Pao d’entraînement </h2>
+            <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter-5">
+    acheter maintenant
+     </button>
+     
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModalCenter-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalCenterTitle">Pao d’entraînement </h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+            <img style="margin-left: 27%;" src="rbk3.jpg"><br>
+            <label class="AA" >prix en DT: </label>
+          <span id="prix5" class="AAA">130</span> </br>
+            <p class="AA"> Quentite: <input id="quentite5"  type="number" onclick="prixs(5)"  step="1"></input> </p>
+            <label class="AA">Prix Total :</label>
+          <span id="total5" class="AAA" > </span>
+    
+           </div>
+           <div class="modal-footer">
+   
+             <button type="button" onclick="totalPrice()"class="btn btn-primary"data-dismiss="modal" aria-label="Close">ajouter au panier</button>
+           </div>
+         </div>
+       </div>
+     </div>      
+     </div>
+     </div> 
+     <div  class="carD" >
+        <img src="rbk.jpg" style="width:100% ;border-radius: 13%">
+  <div class="card-body">
+          <h2 class="titre">Wesing russe De Boxe</h2>
+          <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter-6">
+  acheter maintenant
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModalCenter-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalCenterTitle">Wesing russe De Boxe</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+          <img style="margin-left: 27%;" src="rbk.jpg"><br>
+          <label class="AA">prix en DT: </label>
+        <span id="prix6"class="AA"> 170 </span> </br>
+          <p class="AA"> Quentite: <input id="quentite6"  type="number" onclick="prixs(6)" value="0" step="1"></input> </p>
+          <label class="AA">Prix Total :</label>
+        <span id="total6"class="AAA"> </span>
+  
+         </div>
+         <div class="modal-footer">
+           <button type="button" onclick="totalPrice()" class="btn btn-primary"data-dismiss="modal" aria-label="Close">ajouter au panier</button>
+         </div>
+       </div>
+     </div>
+   </div>      
+   </div>
+   </div> 
+     </section>
+     <nav style="background-color: #dfc3ad!important;"  class="navbar navbar-light bg-light">
+     
+      <span class="AA"> Total d'achat:</span>
+      <span id="panier" class="AAA">  </span>
+  
+    </nav>  
+  
+    
+    </body>
+    <script src="shopping.js"></script>
+</html>

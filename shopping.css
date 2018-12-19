@@ -1,0 +1,50 @@
+.articl{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.carD{
+    
+    width: 16%;
+    background-color: antiquewhite;
+     border-radius: 13%;
+}
+
+.articl-1{
+    display: flex;
+    justify-content: space-around;
+}
+.titre{
+    font-family: cursive;
+    font-size: 112%;
+}
+.Articl{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+.AA{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 1.4px;
+word-spacing: 6px;
+color: #000000;
+font-weight: normal;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: capitalize;
+}
+.AAA{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.4px;
+    word-spacing: 6px;
+    color: #000000;
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+
+}
+
